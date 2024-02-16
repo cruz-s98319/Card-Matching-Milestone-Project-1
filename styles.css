@@ -1,0 +1,19 @@
+/* Add styles for cards and game board */
+.memory-game {
+    outline: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+
+ .card {
+    width: 100px;
+    height: 100px;
+    background-color: #f53535;
+    margin: 5px;
+    cursor: pointer;
+}
