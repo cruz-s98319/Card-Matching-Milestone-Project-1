@@ -1,50 +1,62 @@
-let cards = document.querySelectorAll('.card');
-let flippedCard = false;
-let lockBoard = false;
+const gridContainer = document.querySelectorAll('.card');
+let cards = [];
+// let flippedCard = false;
 let firstCard, secondCard;
+let lockBoard = false;
+let score = 0
 
-function flipCard() {
-    if (lockBoard) return;
-    if (this === firstCard) return;
+document.querySelector(".score").textContent = score;
 
-    this.classList.add('flip');
+fetch("./data/cards.json")
+    .then((res) => res.json())
+    .then((data) => {
+        cards = [...data, ...data];
+        shuffleCards();
+        generateCards();
+    });
 
-    if (!flippedCard) {
-        flippedCard = true;
-        firstCard = this;
-        return;
-    }
+// function flipCard() {
+//     if (lockBoard) return;
+//     if (this === firstCard) return;
 
-    secondCard = this;
-    checkForMatch();
-}
+//     this.classList.add('flip');
 
-function checkForMatch() {
-    let isMatch = firstCard.dataset.card === secondCard.dataset.card;
-    isMatch ? disableCards() : unflipCards();
-}
+//     if (!flippedCard) {
+//         flippedCard = true;
+//         firstCard = this;
+//         return;
+//     }
 
-function disableCards() {
-    firstCard.removeEventListener('click', flipCard);
-    secondCard.removeEventListener('click', flipCard);
+//     secondCard = this;
+//     checkForMatch();
+// }
 
-    resetBoard();
-}
+// function checkForMatch() {
+//     let isMatch = firstCard.dataset.card === secondCard.dataset.card;
+//     isMatch ? disableCards() : unflipCards();
+// }
 
-function unflipCards() {
-    lockBoard = true;
+// function disableCards() {
+//     firstCard.removeEventListener('click', flipCard);
+//     secondCard.removeEventListener('click', flipCard);
 
-    setTimeout(() => {
-        firstCard.classList.remove('flip');
-        secondCard.classList.remove('flip');
+//     resetBoard();
+// }
 
-        resetBoard();
-    }, 1000);
-}
+// function unflipCards() {
+//     lockBoard = true;
 
-function resetBoard() {
-    [flippedCard, lockBoard] = [false, false];
-    [firstCard, secondCard] = [null, null];
-}
+//     setTimeout(() => {
+//         firstCard.classList.remove('flip');
+//         secondCard.classList.remove('flip');
 
-cards.forEach(card => card.addEventListener('click', flipCard));
+//         resetBoard();
+//     }, 1000);
+// }
+
+// function resetBoard() {
+//     [flippedCard, lockBoard] = [false, false];
+//     [firstCard, secondCard] = [null, null];
+// }
+
+// cards.forEach(card => card.addEventListener('click', flipCard));

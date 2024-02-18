@@ -1,30 +1,90 @@
 /* Add styles for cards and game board */
+body {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: #12181f;
+    color: white;
+    /* Add a league background later on */
+}
+
 h1 {
     text-align: center;
     font-weight: 700;
-    font-size: 50px;
+    font-size: 60px;
 }
-.memory-game {
+
+p {
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.actions {
     display: flex;
-    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.actions button {
+    padding: 8px 16px;
+    font-size: 20px;
+    border-radius: 10px;
+    background-color: #27ae60;
+    color: white;
+}
+
+.memory-game {
+    display: grid;
     justify-content: center;
     align-content: center;
     width: 100vw;
     height: 100vh;
     margin: 0 auto;
-    display: grid;
     grid-template-columns: auto auto auto auto;
+    grid-template-rows: auto auto;
+    grid-gap: 16px;
 }
 
- .card {
-    width: 200px;
+ /* .card {
     height: 200px;
-    background-color: #f53535;
-    margin: 5px;
-    cursor: pointer;
+    width: 200px;
+    border-radius: 10px;
+    background-color: rgb(166, 110, 255);
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s ease-in-out;
+} */
+
+.front-image {
+    width: 60px;
+    height: 60px;
 }
 
-/* .column {
-    display: grid;
-    grid-template-columns: auto auto auto;
-} */
+.card.flipped {
+    transform: rotateY(180deg);
+}
+
+.front,
+.back {
+    backface-visibility: hidden;
+    position: absolute;
+    border-radius: 10px;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.card .frontt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotateY(180deg);
+}
+
+.card .back {
+    background-image: url("https://cdna.artstation.com/p/assets/images/images/025/410/380/large/t-j-geisen-tft-iconv2-v005-crop-arstation.jpg?1585702185");
+    background-position: center center;
+    background-size: cover;
+    backface-visibility: hidden;
+
+}
