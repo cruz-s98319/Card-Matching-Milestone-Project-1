@@ -1,4 +1,9 @@
 /* Add styles for cards and game board */
+h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+}
 .memory-game {
     outline: 1px solid black;
     display: flex;
@@ -16,4 +21,9 @@
     background-color: #f53535;
     margin: 5px;
     cursor: pointer;
+}
+
+.column {
+    display: grid;
+    grid-template-columns: auto auto auto;
 }
