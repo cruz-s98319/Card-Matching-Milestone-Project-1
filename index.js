@@ -34,12 +34,13 @@ function generateCards() {
         cardElement.setAttribute("data-name", card.name);
         cardElement.innerHTML = `
             <div class="front">
-                <img class="front-image" src=${card.image} />
+                <img class="front-image" src="${card.image}" alt="${card.name}" />
             </div>
             <div class="back"></div>
         `;
         gridContainer.appendChild(cardElement);
         cardElement.addEventListener("click", flipCard);
+        console.log(cardElement)
     }
 }
 
@@ -97,3 +98,4 @@ function restart() {
     gridContainer.innerHTML = "";
     generateCards();
 }
+
