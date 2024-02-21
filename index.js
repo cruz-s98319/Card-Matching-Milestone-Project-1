@@ -40,7 +40,6 @@ function generateCards() {
         `;
         gridContainer.appendChild(cardElement);
         cardElement.addEventListener("click", flipCard);
-        console.log(cardElement)
     }
 }
 
@@ -56,8 +55,6 @@ function flipCard() {
     }
 
     secondCard = this;
-    score++;
-    document.querySelector(".score").textContent = score;
     lockBoard = true;
 
     checkForMatch();
@@ -66,7 +63,18 @@ function flipCard() {
 function checkForMatch() {
     let isMatch = firstCard.dataset.name === secondCard.dataset.name;
 
-    isMatch ? disableCards() : unflipCards();
+    if (isMatch) {
+        score++;
+        document.querySelector(".score").textContent = score;
+        disableCards();
+    } else {
+        setTimeout(() => {
+            firstCard.classList.remove("flipped");
+            secondCard.classList.remove("flipped");
+            resetBoard();
+        }, 1000);
+    }
+
 }
 
 function disableCards() {
@@ -74,14 +82,6 @@ function disableCards() {
     secondCard.removeEventListener("click", flipCard);
 
     resetBoard();
-}
-
-function unflipCards() {
-    setTimeout(() => {
-        firstCard.classList.remove("flipped");
-        secondCard.classList.remove("flipped");
-        resetBoard();
-    }, 1000);
 }
 
 function resetBoard() {
