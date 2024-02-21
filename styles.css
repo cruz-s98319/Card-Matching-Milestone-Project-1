@@ -44,15 +44,15 @@ p {
     grid-gap: 16px;
 }
 
- /* .card {
+.card {
     height: 200px;
     width: 200px;
     border-radius: 10px;
-    background-color: rgb(166, 110, 255);
+    /* background-color: rgb(166, 110, 255); */
     position: relative;
     transform-style: preserve-3d;
     transition: all 0.5s ease-in-out;
-} */
+}
 
 .front-image {
     width: 60px;
@@ -82,7 +82,7 @@ p {
 }
 
 .card .back {
-    background-image: url("https://cdna.artstation.com/p/assets/images/images/025/410/380/large/t-j-geisen-tft-iconv2-v005-crop-arstation.jpg?1585702185");
+    background-image: url("./assets/t-j-geisen-tft-iconv2-v005-crop-arstation.jpg");
     background-position: center center;
     background-size: cover;
     backface-visibility: hidden;

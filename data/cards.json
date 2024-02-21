@@ -1,0 +1,34 @@
+[
+    {
+        "image": "../assets/ST-kayle-damage-ability.jpg",
+        "name": "damage"
+    },
+    {
+        "image": "../assets/ST-kayle-heal-ability.jpg",
+        "name": "heal"
+    },
+    {
+        "image": "../assets/ST-kayle-passive.jpg",
+        "name": "passive"
+    },
+    {
+        "image": "../assets/ST-kayle-slow-ability.jpg",
+        "name": "slow"
+    },
+    {
+        "image": "../assets/ST-diana-ult.jpg",
+        "name": "ult"
+    },
+    {
+        "image": "../assets/ST-diana-crescent.jpg",
+        "name": "crescent"
+    },
+    {
+        "image": "../assets/ST-diana-orb.jpg",
+        "name": "orb"
+    },
+    {
+        "image": "../assets/ST-diana-dash.jpg",
+        "name": "dash"
+    }
+]
