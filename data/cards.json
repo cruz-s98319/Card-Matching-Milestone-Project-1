@@ -30,5 +30,21 @@
     {
         "image": "../assets/ST-diana-dash.jpg",
         "name": "dash"
+    },
+    {
+        "image": "../assets/ST-yuumi-arrow.jpg",
+        "name": "arrow"
+    },
+    {
+        "image": "../assets/ST-yuumi-heal.jpg",
+        "name": "yu-heal"
+    },
+    {
+        "image": "../assets/ST-yuumi-orb.jpg",
+        "name": "yu-orb"
+    },
+    {
+        "image": "../assets/ST-yuumi-ult.jpg",
+        "name": "yu-ult"
     }
 ]
