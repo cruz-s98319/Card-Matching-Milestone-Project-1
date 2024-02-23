@@ -3,6 +3,7 @@ let cards = [];
 let firstCard, secondCard;
 let lockBoard = false;
 let score = 0
+let uniqueImages = [];
 
 document.querySelector(".score").textContent = score;
 
@@ -28,18 +29,39 @@ function shuffleCards() {
 }
 
 function generateCards() {
-    for (let card of cards) {
+    randomImages = [];
+
+    while (randomImages.length < 8) {
+        const randomIndex = Math.floor(Math.random() * cards.length);
+        const randomCard = cards[randomIndex];
+        if (!randomImages.includes(randomCard.image)) {
+            randomImages.push(randomCard.image);
+        }
+    }
+
+    const duplicatedImages = [...randomImages, ...randomImages];
+
+    shuffleImages(duplicatedImages);
+
+    for (let image of duplicatedImages) {
         const cardElement = document.createElement("div");
         cardElement.classList.add("card");
-        cardElement.setAttribute("data-name", card.name);
+        cardElement.setAttribute("data-name", image);
         cardElement.innerHTML = `
             <div class="front">
-                <img class="front-image" src="${card.image}" alt="${card.name}" />
+                <img class="front-image" src="${image}" alt="${image}" />
             </div>
             <div class="back"></div>
         `;
         gridContainer.appendChild(cardElement);
         cardElement.addEventListener("click", flipCard);
+    }
+}
+
+function shuffleImages(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const x = Math.floor(Math.random() * (i + 1));
+        [array[i], array[x]] = [array[x], array[i]];
     }
 }
 
