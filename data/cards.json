@@ -33,7 +33,7 @@
     },
     {
         "image": "../assets/ST-yuumi-arrow.jpg",
-        "name": "arrow"
+        "name": "yu-arrow"
     },
     {
         "image": "../assets/ST-yuumi-heal.jpg",
@@ -46,5 +46,21 @@
     {
         "image": "../assets/ST-yuumi-ult.jpg",
         "name": "yu-ult"
+    },
+    {
+        "image": "../assets/ST-qiyana-earth.jpg",
+        "name": "earth"
+    },
+    {
+        "image": "../assets/ST-qiyana-water.jpg",
+        "name": "water"
+    },
+    {
+        "image": "../assets/ST-qiyana-fire.jpg",
+        "name": "fire"
+    },
+    {
+        "image": "../assets/ST-qiyana-elements.jpg",
+        "name": "elements"
     }
 ]
