@@ -1,3 +1,5 @@
+// **/* Title: memory-card-game * Author: (JavaSript Academy) * Date: 2023 * Code version: (v1) *Availability: https://github.com/javascriptacademy-stash/memory-card-game* **/
+
 const gridContainer = document.querySelector('.memory-game');
 let cards = [];
 let firstCard, secondCard;
