@@ -123,7 +123,14 @@ function restart() {
 }
 
 function checkScore() {
+    // if (score === 8) {
+    //     setTimeout(() => {
+    //         alert("Congrats! You matched all the cards! Restart the game");
+    //     }, 500);
+    // }
     if (score === 8) {
-        document.querySelector('.message').style.display = 'block';
+        document.getElementById("winMessage").style.display = "block";
+    } else {
+        document.getElementById("winMessage").style.display = "none";
     }
 }

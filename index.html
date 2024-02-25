@@ -9,14 +9,22 @@
 <body>
     <h1>Match the cards!</h1>
     <p>Score: <span class="score"></span></p>
-    <div class="message" style="display: none;">
+    <!-- <div class="message" style="display: none;">
         <p>Congratulations! You matched all the cards!</p>
+    </div> -->
+    <div class="popup" id="winMessage">
+        <div class="popup-text">
+            <span class="close-popup" onclick="hidePopup()">&times;</span>
+            <p>Congratulations! You matched all the cards!</p>
+        </div>
+        <div class="actions">
+            <button onclick="restart()">Restart</button>
+        </div>
     </div>
-    <div class="actions">
+    <!-- <div class="actions">
         <button onclick="restart()">Restart</button>
-    </div>
-    <div class="memory-game">
-    </div>
+    </div> -->
+    <div class="memory-game"></div>
     <script src="index.js"></script>
 </body>
 </html>
