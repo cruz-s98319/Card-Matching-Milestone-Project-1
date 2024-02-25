@@ -1,8 +1,10 @@
 # Card-Matching-Milestone-Project-1
 
-For the first milestone project, I was deciding between a couple of old school games such as the snake game, tic tac toe, and a memory card game. I decided to go with the memory card game as I thought that it would be the best way to utilize simple Javascript for the mechanics and put emphasis on the CSS as out of the two languages, I am more comfortable with CSS.
+For the first milestone project, I was deciding between a couple of old school games such as the snake game, tic tac toe, and a memory card game. I decided to go with the memory card game as I thought that it would be the best way to utilize simple Javascript for the mechanics. The images come from one of my favorite games to play, League of Legends by Riot Games.
 
-I used a started code for HTML, CSS, and Javascript from ChatGPT. Over time, I built on top of the starter code and also referenced a tutorial code from JavaScript Academy on Youtube/GitHub.
+The rules are simple, when the page loads, it will generate 16 cards meaning there are a total of 8 pairs of cards. The objective of the game is to flip 2 cards at a time to see if they match. If the 2 cards that are flipped are a matching pair, the score will go up and the cards will not flip back. If the 2 cards do not match, the player will have to flip another card(s) to find another matching pair until the score reaches 8 and all matching pairs are found.
+
+I used a starter code for HTML, CSS, and Javascript from ChatGPT. Over time, I built on top of the starter code and also referenced a tutorial code from JavaScript Academy on Youtube/GitHub.
 The link to JavaScript Academy is below:
 https://github.com/javascriptacademy-stash/memory-card-game
 

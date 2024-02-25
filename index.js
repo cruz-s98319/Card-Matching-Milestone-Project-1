@@ -122,6 +122,7 @@ function restart() {
     generateCards();
 }
 
+// Change the alert to a different notification
 function checkScore() {
     if (score === 8) {
         setTimeout(() => {
