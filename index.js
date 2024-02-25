@@ -124,7 +124,7 @@ function restart() {
 }
 
 function checkScore() {
-    if (score === 1) {
+    if (score === 8) {
         document.getElementById("winMessage").style.display = "block";
     }
 }

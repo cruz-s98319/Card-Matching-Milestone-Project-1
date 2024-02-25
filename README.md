@@ -8,8 +8,15 @@ I used a starter code for HTML, CSS, and Javascript from ChatGPT. Over time, I b
 The link to JavaScript Academy is below:
 https://github.com/javascriptacademy-stash/memory-card-game
 
+I also referenced W3Schools for the CSS styling.
+https://www.w3schools.com
+
 For the card images, I used the character ability icon concepts for the game League of Legends created by Samuel Thompson. You will find these images on his artstation link below:
 https://www.artstation.com/artwork/nQWZmX
 
 The image for the back of the cards is the Riot Games Team Fight Tactics mobile app icon created by T.J. Geisen. Below is the link to his artstation post for the image:
 https://www.artstation.com/artwork/1ng5Re
+
+I used one of the official wallpapers from the game as the background image. Wallpapers are downloadable on their website.
+https://displays.riotgames.com/en-au/
+https://displays.riotgames.com/static/poster-kindred-26fa38bc2270138b01a221cacbffe0c3.jpg
