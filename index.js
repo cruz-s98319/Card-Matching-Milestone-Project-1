@@ -120,17 +120,11 @@ function restart() {
     document.querySelector(".score").textContent = score;
     gridContainer.innerHTML = "";
     generateCards();
+    document.getElementById("winMessage").style.display = "none";
 }
 
 function checkScore() {
-    // if (score === 8) {
-    //     setTimeout(() => {
-    //         alert("Congrats! You matched all the cards! Restart the game");
-    //     }, 500);
-    // }
-    if (score === 8) {
+    if (score === 1) {
         document.getElementById("winMessage").style.display = "block";
-    } else {
-        document.getElementById("winMessage").style.display = "none";
     }
 }
