@@ -122,11 +122,8 @@ function restart() {
     generateCards();
 }
 
-// Change the alert to a different notification
 function checkScore() {
     if (score === 8) {
-        setTimeout(() => {
-            alert("Congrats! You matched all the cards! Restart the game");
-        }, 500);
+        document.querySelector('.message').style.display = 'block';
     }
 }
