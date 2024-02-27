@@ -53,6 +53,7 @@ p {
     position: relative;
     transform-style: preserve-3d;
     transition: all 0.5s ease-in-out;
+    border: 3px solid gold;
 }
 
 .front-image {
@@ -95,7 +96,7 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: rgba(60, 176, 243, 0.9);
+    background-color: rgb(28, 29, 100);
     border: 2px solid #333;
     border-radius: 10px;
     padding: 20px;

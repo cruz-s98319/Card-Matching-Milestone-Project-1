@@ -51,7 +51,7 @@ function generateCards() {
         cardElement.setAttribute("data-name", image);
         cardElement.innerHTML = `
             <div class="front">
-                <img class="front-image" src="${image}" alt="${image}" />
+                <img class="front-image" src="${image}" alt="${image}.name" />
             </div>
             <div class="back"></div>
         `;

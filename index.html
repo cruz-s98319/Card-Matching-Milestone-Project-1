@@ -10,16 +10,16 @@
     <!-- **/* Title: memory-card-game * Author: (JavaSript Academy) * Date: 2023 * Code version: (v1) *Availability: https://github.com/javascriptacademy-stash/memory-card-game* **/ -->
     <h1>Match the cards!</h1>
     <p>Score: <span class="score"></span></p>
-    <div class="popup" id="winMessage">
+    <section class="popup" id="winMessage">
         <div class="popup-text">
-            <span class="close-popup" onclick="hidePopup()">&times;</span>
+            <span class="close-popup" onclick="hidePopup()"></span>
             <p>VICTORY! You matched all the cards!</p>
         </div>
         <div class="actions">
             <button onclick="restart()">Restart</button>
         </div>
-    </div>
-    <div class="memory-game"></div>
+    </section>
+    <section class="memory-game"></section>
     <script src="index.js"></script>
 </body>
 </html>

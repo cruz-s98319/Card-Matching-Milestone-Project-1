@@ -1,66 +1,66 @@
 [
     {
-        "image": "../assets/ST-kayle-damage-ability.jpg",
+        "image": "./assets/ST-kayle-damage-ability.jpg",
         "name": "damage"
     },
     {
-        "image": "../assets/ST-kayle-heal-ability.jpg",
+        "image": "./assets/ST-kayle-heal-ability.jpg",
         "name": "heal"
     },
     {
-        "image": "../assets/ST-kayle-passive.jpg",
+        "image": "./assets/ST-kayle-passive.jpg",
         "name": "passive"
     },
     {
-        "image": "../assets/ST-kayle-slow-ability.jpg",
+        "image": "./assets/ST-kayle-slow-ability.jpg",
         "name": "slow"
     },
     {
-        "image": "../assets/ST-diana-ult.jpg",
+        "image": "./assets/ST-diana-ult.jpg",
         "name": "ult"
     },
     {
-        "image": "../assets/ST-diana-crescent.jpg",
+        "image": "./assets/ST-diana-crescent.jpg",
         "name": "crescent"
     },
     {
-        "image": "../assets/ST-diana-orb.jpg",
+        "image": "./assets/ST-diana-orb.jpg",
         "name": "orb"
     },
     {
-        "image": "../assets/ST-diana-dash.jpg",
+        "image": "./assets/ST-diana-dash.jpg",
         "name": "dash"
     },
     {
-        "image": "../assets/ST-yuumi-arrow.jpg",
+        "image": "./assets/ST-yuumi-arrow.jpg",
         "name": "yu-arrow"
     },
     {
-        "image": "../assets/ST-yuumi-heal.jpg",
+        "image": "./assets/ST-yuumi-heal.jpg",
         "name": "yu-heal"
     },
     {
-        "image": "../assets/ST-yuumi-orb.jpg",
+        "image": "./assets/ST-yuumi-orb.jpg",
         "name": "yu-orb"
     },
     {
-        "image": "../assets/ST-yuumi-ult.jpg",
+        "image": "./assets/ST-yuumi-ult.jpg",
         "name": "yu-ult"
     },
     {
-        "image": "../assets/ST-qiyana-earth.jpg",
+        "image": "./assets/ST-qiyana-earth.jpg",
         "name": "earth"
     },
     {
-        "image": "../assets/ST-qiyana-water.jpg",
+        "image": "./assets/ST-qiyana-water.jpg",
         "name": "water"
     },
     {
-        "image": "../assets/ST-qiyana-fire.jpg",
+        "image": "./assets/ST-qiyana-fire.jpg",
         "name": "fire"
     },
     {
-        "image": "../assets/ST-qiyana-elements.jpg",
+        "image": "./assets/ST-qiyana-elements.jpg",
         "name": "elements"
     }
 ]
